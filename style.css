@@ -14,6 +14,11 @@ body h3{
     background-color:  #CF2B2B;
     height: 92px;
     width: 100%;
+    z-index: 1;
+}
+
+.footer_inside.enabled{
+    background-color: green;
 }
 
 .header_decoy{
@@ -52,15 +57,34 @@ h3{
 }
 
 .food_container{
+    border: solid 5px #E5E5E5;
     height: 216px;
     width: 172px;
     border-radius: 9px;
-    background-color: #ffffff;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 16px;
+    position: relative;
 }
+
+.food_container.selected{
+    border: solid 5px green;
+}
+.food_container.selected ion-icon{
+    display: flex;
+}
+
+.food_container ion-icon{
+    color: green;
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    display: none;
+}
+
 .food_container h1{
     font-weight: bold;
     margin-top: 5px;
@@ -112,19 +136,6 @@ h3{
     bottom: 0px;
 }
 
-.button{
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-    margin: 80px;
-    cursor: pointer;
-    border-radius: 100%;
-    transition: background 1s;
-}
-
-.button--selected{
-    background-color: royalblue;
+.select{
+    border: solid 5px green;
 }
