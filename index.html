@@ -17,134 +17,132 @@
          <h2>Sua comida em 6 minutos</h2>
      </div> 
 
-     <div class = "header_decoy">
+    <div class = "header_decoy">
         <h1>Driven Eats</h1>
         <h2>Sua comida em 6 minutos</h2>
     </div> 
 
      <h3>Primeiro, seu prato</h3>
 
-        <div class="dishes foods">
+        <div class="dishes foods" data-identifier="dishes">
 
-            <div class = "food_container" onclick="change_color_food(event)">
-                <img src="imgsource/food.jpg">
-                <h1>Frango Yin Yang</h1>
-                <h2>Um pouco de batata,
-                um pouco de salada</h2>
-                <h1 class = "price">R$ 14,90
-                <ion-icon name="checkmark-circle"></ion-icon></h1>
+            <div class = "food_container" onclick="change_color_food(event)" data-identifier="food-option">
+                <img src="imgsource/pizza1.png">
+                <h1 data-identifier="food-title">Pizza Marguerita</h1>
+                <h2>Pizza com queijo e manjericão</h2>
+                <h5 class = "price" data-identifier="food-price">R$ 22,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </div>
 
-            <div class = "food_container" onclick="change_color_food(event)">
-                    <img src="imgsource/food.jpg">
-                    <h1>Frango Yin Yang</h1>
-                    <h2>Um pouco de batata,
-                    um pouco de salada</h2>
-                    <h1 class = "price">R$ 14,90
-                 <ion-icon name="checkmark-circle"></ion-icon></h1>
+            <div class = "food_container" onclick="change_color_food(event)" data-identifier="food-option">
+                <img src="imgsource/pizza2.png">
+                <h1 data-identifier="food-title">Pizza de Quatro Queijos</h1>
+                <h2>Pizza com 4 quejos</h2>
+                <h5 class = "price" data-identifier="food-price">R$ 28,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </div>
 
-            <div class = "food_container" onclick="change_color_food(event)">
-                    <img src="imgsource/food.jpg">
-                    <h1>Frango Yin Yang</h1>
-                    <h2>Um pouco de batata,
-                    um pouco de salada</h2>
-                    <h1 class = "price">R$ 14,90</h1>
-                 <ion-icon name="checkmark-circle"></ion-icon></h1>
+            <div class = "food_container" onclick="change_color_food(event)" data-identifier="food-option">
+                <img src="imgsource/pizza3.jpg">
+                <h1 data-identifier="food-title">Pizza Frango com Catupiry</h1>
+                <h2>Vem frango e catupiry</h2>
+                <h5 class = "price" data-identifier="food-price">R$ 25,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </div>
 
-            <div class = "food_container" onclick="change_color_food(event)">
-                    <img src="imgsource/food.jpg">
-                    <h1>Frango Yin Yang</h1>
-                    <h2>Um pouco de batata,
-                    um pouco de salada</h2>
-                    <h1 class = "price">R$ 14,90</h1>
-                 <ion-icon name="checkmark-circle"></ion-icon></h1>
+            <div class = "food_container" onclick="change_color_food(event)" data-identifier="food-option">
+                <img src="imgsource/pizza4.jpg">
+                <h1 data-identifier="food-title">Pizza Calabresa</h1>
+                <h2>Pizza com calabresa</h2>
+                <h5 class = "price" data-identifier="food-price">R$ 24,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             
         </div>
 
      <h3>Agora, sua bebida</h3>
     
-    <div class="dishes drinks">
+    <div class="dishes drinks" data-identifier="drinks">
 
-            <div class = "food_container" onclick="change_color_drink(event)">
-                <img src="imgsource/coca.png">
-                <h1>EU SOU O TESTE</h1>
+            <div class = "food_container" onclick="change_color_drink(event)" data-identifier="food-option">
+                <img src="imgsource/schweppes.jpg">
+                <h1 data-identifier="food-title">Schurebis</h1>
                 <h2>Lata 350ml</h2>
-                <h1 class = "price">R$ 4,90</h1>
-            <ion-icon name="checkmark-circle"></ion-icon></h1>
-        </div>
+                <h5 class = "price" data-identifier="food-price">R$ 4,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon></h1>
+            </div>
 
-            <div class = "food_container" onclick="change_color_drink(event)">
-                <img src="imgsource/coca.png">
-                <h1>Coquinha Gelada</h1>
-                <h2>Lata 350ml</h2>
-                <h1 class = "price">R$ 4,90</h1>
-            <ion-icon name="checkmark-circle"></ion-icon></h1>
-        </div>
+            <div class = "food_container" onclick="change_color_drink(event)" data-identifier="food-option">
+                <img src="imgsource/agua.jpg">
+                <h1 data-identifier="food-title">Agua</h1>
+                <h2>Garrafa 500ml</h2>
+                <h5 class = "price" data-identifier="food-price">R$ 3,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon></h1>
+            </div>
 
-            <div class = "food_container" onclick="change_color_drink(event)">
-                <img src="imgsource/coca.png">
-                <h1>Coquinha Gelada</h1>
+            <div class = "food_container" onclick="change_color_drink(event)" data-identifier="food-option">
+                <img src="imgsource/lokal.jpg">
+                <h1 data-identifier="food-title">Cerveja Boa</h1>
                 <h2>Lata 350ml</h2>
-                <h1 class = "price">R$ 4,90</h1>
-            <ion-icon name="checkmark-circle"></ion-icon></h1>
-        </div>
+                <h5 class = "price" data-identifier="food-price">R$ 5,90</h5>
+                <ion-icon name="checkmark-circle"></ion-icon></h1>
+            </div>
 
-            <div class = "food_container" onclick="change_color_drink(event)">
+            <div class = "food_container" onclick="change_color_drink(event)" data-identifier="food-option">
                 <img src="imgsource/coca.png">
-                <h1>Coquinha Gelada</h1>
+                <h1 data-identifier="food-title">Refrigerante</h1>
                 <h2>Lata 350ml</h2>
-                <h1 class = "price">R$ 4,90</h1>
-            <ion-icon name="checkmark-circle"></ion-icon></h1>
-        </div>
+                <h5 class = "price" data-identifier="food-price">R$ 4,40</h5>
+                <ion-icon name="checkmark-circle"></ion-icon></h1>
+            </div>
 
     </div>
 
     <h3>Por fim, sua sobremesa</h3>
 
-    <div class="dishes desserts">
+    <div class="dishes desserts" data-identifier="desserts">
 
-        <div class = "food_container" onclick="change_color_dessert(event)">
+        <div class = "food_container" onclick="change_color_dessert(event)" data-identifier="food-option">
             <img src="imgsource/pudim.jpg">
-            <h1>Pudim</h1>
+            <h1 data-identifier="food-title">Pudim</h1>
             <h2>Apenas pudim</h2>
-            <h1 class = "price">R$ 7,90</h1>
+            <h5 class = "price" data-identifier="food-price">R$ 7,90</h5>
             <ion-icon name="checkmark-circle"></ion-icon></h1>
         </div>
 
-        <div class = "food_container" onclick="change_color_dessert(event)">
-            <img src="imgsource/pudim.jpg">
-            <h1>Pudim</h1>
-            <h2>Apenas pudim</h2>
-            <h1 class = "price">R$ 7,90</h1>
+        <div class = "food_container" onclick="change_color_dessert(event)" data-identifier="food-option">
+            <img src="imgsource/banana.jpg">
+            <h1 data-identifier="food-title">Banana</h1>
+            <h2>Isso mesmo que você leu</h2>
+            <h5 class = "price" data-identifier="food-price">R$ 1,90</h5>
             <ion-icon name="checkmark-circle"></ion-icon></h1>
         </div>
 
-        <div class = "food_container" onclick="change_color_dessert(event)">
-            <img src="imgsource/pudim.jpg">
-            <h1>Pudim</h1>
-            <h2>Apenas pudim</h2>
-            <h1 class = "price">R$ 7,90</h1>
+        <div class = "food_container" onclick="change_color_dessert(event)" data-identifier="food-option">
+            <img src="imgsource/mel.jpg">
+            <h1 data-identifier="food-title">Melzinho</h1>
+            <h2>Melzin em sachê</h2>
+            <h5 class = "price" data-identifier="food-price">R$ 0,50</h5>
             <ion-icon name="checkmark-circle"></ion-icon></h1>
         </div>
 
-        <div class = "food_container" onclick="change_color_dessert(event)">
-            <img src="imgsource/pudim.jpg">
-            <h1>Pudim</h1>
-            <h2>Apenas pudim</h2>
-            <h1 class = "price">R$ 7,90</h1>
+        <div class = "food_container" onclick="change_color_dessert(event)" data-identifier="food-option">
+            <img src="imgsource/choco.jpg">
+            <h1 data-identifier="food-title">Chocolate</h1>
+            <h2>Chocolate Sortido</h2>
+            <h5 class = "price" data-identifier="food-price">R$ 4,90</h5>
             <ion-icon name="checkmark-circle"></ion-icon></h1>
         </div>
+
+        
     </div>
 
 
     <div class="footer">
-        <div class="footer_inside">
-            <h1>Selecione os 3 itens <br>
-                para fechar o pedido</h1>
-        </div>
+        <button class="footer_inside" disabled onclick="send_message()">
+            <h1>Selecione os 3 itens para fechar o pedido</h1>
+        </button>
+        
     </div>
 
     <div class="footer_decoy"></div>
